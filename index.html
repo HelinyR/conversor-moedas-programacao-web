@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Conversor de Moedas</h1>
+    <form id="currencyForm">
+        <div class="currency-container">
+            <div>
+                <div class="label-header">De:</div>
+                <div class="label-container">
+                    <select id="fromCurrency" name="fromCurrency">
+                        <option value="BRL">Real Brasileiro (BRL)</option>
+                        <option value="USD">Dólar Americano (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="CNY">Yuan Chinês (CNY)</option>
+                        <option value="ARS">Peso Argentino (ARS)</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="label-header">Para:</div>
+                <div class="label-container">
+                    <select id="toCurrency" name="toCurrency">
+                        <option value="USD">Dólar Americano (USD)</option>
+                        <option value="EUR">Euro (EUR)</option>
+                        <option value="BRL">Real Brasileiro (BRL)</option>
+                        <option value="CNY">Yuan Chinês (CNY)</option>
+                        <option value="ARS">Peso Argentino (ARS)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" name="amount" placeholder="Digite o valor">
+            <br>
+            <button type="button" onclick="convertCurrency()">Converter</button>
+        </div>
+    </form>
+
+    <h2"><span id="result">Resultado</span></h2>
+</body>
+<script src="script.js"></script>
+
+</html>
